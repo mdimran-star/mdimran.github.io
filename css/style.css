@@ -85,11 +85,14 @@ section div h1{
 	right: 0%;
 	opacity: .1;
 	z-index: -1;
-	background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+	background-image: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
 }
 .nav-item a{
-    color:#fff!important;
+    color:red!important;
     font-weight: bold;
+}
+.nav-item a:hover{
+	color: white!important;
 }
 
 
@@ -181,7 +184,7 @@ section div h1{
 	padding: 40px !important;
 	border-radius: 20px;
 	transition: 1s;
-	color: gray;
+	color: #fff;
 
 	position: relative;
 	
@@ -205,9 +208,11 @@ section div h1{
 
 
 .serviceoffer{
-	background: gray;
+	background-image: url('../images/bg1.jpg');
+	background-size: cover;
 	padding: 50px 0;
 	margin-bottom: 100px;
+	color: #fff;
 }
 
 .heading h1{
@@ -252,7 +257,7 @@ section div h1{
 	left: 0%;
 	right: 0%;
     z-index: -1;
-	background: linear-gradient(170deg, maroon 55%, #fff 0%);
+	background: linear-gradient(170deg, maroon 55%, gray 0%), url('../images/bg1.jpg');
 }
 .pricing{
     height:auto;
@@ -264,6 +269,12 @@ section div h1{
 	font-size: 40px;
 	line-height: 1;
 	color:blue;
+}
+
+.money:hover{
+	font-size: 40px;
+	line-height: 1;
+	color:#50d1c0;
 }
 .card{
 	width: 100%;
@@ -284,6 +295,17 @@ section div h1{
 	padding: 20px 9!important;
 
 }
+
+.card-header:hover{
+	font-size: 1.6rem;
+	font-weight: bold !important;
+	color: white!important;
+	border-radius: 20px 5px blue!important;
+	background-image: url('../images/bg.jpg')!important;
+	padding: 20px 9!important;
+
+}
+
 .card-body{
      padding: 30px 0px!important;
 }
@@ -299,8 +321,8 @@ section div h1{
 	font-size: 1.6rem;
 	font-weight:  !important;
 	color: white!important;
-	border-radius: blue!important;
-	background: maroon !important;
+	border-radius: 20px, blue!important;
+	background: gray !important;
 	padding: 20px 9!important;
 
 }
@@ -319,19 +341,34 @@ section div h1{
 
 }
 
-.card:hover .card-footer a{
+
+.card:hover{
 	color: #50d1c0;
-	background: #fff;
+	background-image: url('../images/bg1.jpg')!important;
+	background-size: cover;
+	border-radius: 20px;
+	text-decoration: none;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.9);
+}
+.card-footer a:hover{
+	color: #50d1c0;
+	background-image: url('../images/bg1.jpg');
+	background-size: cover;
 	text-decoration: none;
 	box-shadow: 0 0 20px 0 rgba(0,0,0,0.9);
 }
 
 .card{
-	background: #fff;
+	background-image: url('../images/7.jpeg')!important;
 	border: medium none;
-	padding: 50px !important;
+	color: black!important;
+	padding: 10px !important;
 	border-radius: 3px;
 	transition: 0.3s;
+}
+
+.card-color li{
+	color:black;
 }
 
 .card:hover{
@@ -348,6 +385,7 @@ section div h1{
 
 
 .box{
+
 	margin: auto;
 	text-align: center;
 	border: 1px solid rgba(0,0,0,0.2);
@@ -357,7 +395,9 @@ section div h1{
 	background: orange;
 }
 .box:hover{
-	background: maroon;
+	background-image: url('../images/bg.jpg');
+	color: black;
+	font-size: 20px;
 }
 
 .carousel-indicators {
@@ -367,7 +407,7 @@ section div h1{
 }
 
 .carousel-indicators li{
-	background-color: maroon!important
+	background-color: white!important
 }
 .box a{
 	position: relative;
@@ -441,15 +481,17 @@ section div h1{
 	left: 0px;
 	bottom: 0px;
 	right: 0px;
-	background: linear-gradient(305deg, maroon 55%, #fff 0%);
+	margin-bottom: 20px;
+	background: linear-gradient(305deg, maroon 55%, gray 0%);
 	z-index: -1;
 }
 
 .form-button button{
 	border: 1px solid orange;
 	border-radius: 100px;
-	margin: 0 5px;
+	margin: 10 5px;
 	padding: 12px 35px;
+	margin-top: auto;
 	outline: none;
 	color: #fff;
 	font-size: 1rem;
@@ -474,4 +516,19 @@ form:hover .form-button button{
 .card-second .happyclients{
 	transform: translateY(0px);
 	margin: 5px 0;
+}
+
+
+.happyclients{
+	background-color: maroon;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.copyright{
+	padding: 15px;
+	margin-top: auto;
+	text-align: center;
+	color: #fff;
+	background-image: url('../images/bg1.jpg');
 }
